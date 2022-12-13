@@ -1,0 +1,319 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+ 
+    
+background-image: url(ımg/sk3.jpg);
+
+ 
+   background-size: cover;
+   background-position: center;
+
+   position: relative;
+
+}
+
+
+
+
+.container{
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: transparent;
+
+}
+.card{
+    background: transparent;
+    background-image: linear-gradient(to left bottom, rgba(141, 155, 212, 0.7), rgba(203, 222, 203, 0.7))  ;
+    opacity:0.7;
+}
+
+.card-header{
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 12px 16px ;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+.card-header:hover{
+    opacity: 0.5;
+}
+
+.container.active header i{
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.container.active .card-body{
+    display: none;
+}
+
+
+ .btn{
+   width: 25%;
+   padding: 12px 12px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.32);
+    
+}
+
+.btn:hover{
+background-color: #fff;
+border:2px solid #43affc;
+color: rgba(0, 0, 0, 0.50);
+
+}
+.btn:active{
+    transform: translateY(6px);
+}
+
+.form{
+   padding: 12px 12px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    width: 75%;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.form:focus:valid{
+    border: 2px solid #43affc;
+}
+
+.form::placeholder{
+    color: rgba(0, 0, 0, 0.32);
+    font-weight: 600;
+}
+
+
+.weahet{
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: rgba(0, 0, 0, 0.20);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weahet::before{
+    content:"veya";
+    color: rgba(0, 0, 0, 0.32);
+    font-size: 18px;
+    padding: 0 12px;
+    background-color: #fff;
+    font-weight: 600;
+    
+}
+
+
+.container  .weather-status{
+    display: none; 
+    margin: 10px 0 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+    background: transparent;
+    background-image: linear-gradient(to left bottom, rgba(141, 155, 212, 0.7), rgba(203, 222, 203, 0.7))  ;
+    opacity:0.9;
+}
+.container.active .weather-status{
+    display: flex;
+}
+ #wheatImg{
+  max-width: 120px;
+} 
+
+
+.temp{
+    
+    font-weight: 600;
+    font-size: 44px;
+    text-align: center;
+
+}
+
+.wheather{
+    font-weight: 500;
+    font-size: 28px;
+ text-align: center;
+ /* margin: 15px 20px; */
+}
+
+.locat{
+    display: flex;
+    font-size: 28px;
+    padding: 0 18px;
+    text-align: center;
+    
+     align-items: flex-start; 
+}
+
+.windSpeed{
+    display: flex;
+    font-weight: 500;
+    font-size: 32px;
+
+   
+}
+.temps{
+    display: flex;
+    align-items: center;
+    font-size: 44px;
+}
+.otherWheather, .otherWheather2{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border-top: 2px solid rgba(0, 0, 0, 0.16); */
+}
+
+.weatLoc, .weatLoc2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* .otherWheather2{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+} */
+
+.new{
+    display: flex;
+    width: 100%;
+    padding: 12px 0;
+    align-items: center;
+    justify-content: center;
+}
+.new i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+/* .hummidity{
+    border-left: 1px solid rgba(0, 0, 0, 0.16);
+}
+.averageTemp2{
+    border-left: 1px solid rgba(0, 0, 0, 0.16);
+}  */
+
+.feelDetail, .hummDetail, .maxTempDetail, .minTempDetail{
+    margin-left: 2px;
+}
+
+.feelDetail span, .hummDetail span, .maxTempDetail span, .minTempDetail span{
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: -1px;
+}
+
+.feelDetail p, .hummDetail p, .maxTempDetail p, .minTempDetail p{
+    font-size: 15px;
+    margin-top: -4px;
+}
+
+.error{
+    width: 300px;
+    font-weight: 700;
+    font-size: 36px;
+    padding: 12px;
+    display: flex;
+ margin-left: 150px;
+text-align: center;
+
+}
+
+.error-text, .errorDay{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: red;
+    text-transform: capitalize;
+}
+
+.not-found{
+    opacity: 0;
+    height: 0;
+}
+.not-cıty{
+    opacity: 0;
+   height: 0;
+}
+
+
+
+.daycontainer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    margin-top: 25px;
+    
+  
+}
+
+.daycard{
+    margin-top: 50px;
+    margin-left: 12px;
+    background: transparent;
+    background-image: linear-gradient(to left bottom, rgba(141, 155, 212, 0.7), rgba(203, 222, 203, 0.7))  ;
+    opacity:0.7;
+   
+    /* width: 14%; */
+}
+
+.weatherContainer{
+    width: 1000px;
+    margin-bottom: 80px;
+
+    
+}
+.cardBody{
+    padding: 12px 16px;
+}
+
+#dayImg{
+    width: 50px;
+    height: 50px;
+}
+
+.dayTitle{
+    font-size: 16px;
+    font-weight: 700;
+} 
+
+
+
