@@ -6,7 +6,7 @@ showDayWeather = (city) => {
   request.open("GET", `https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=${city}`);
 
  request.setRequestHeader("content-type", "application/json");
-  request.setRequestHeader("authorization", "apikey 2oYaPJqEyMTvSWXhoBoaXA:0CIbTdSXIwFlQtMHqGLP89");
+  request.setRequestHeader("authorization", "apikey '<your_api_key>'");
   request.send()
   request.addEventListener('load', function () {
     console.log(this)
