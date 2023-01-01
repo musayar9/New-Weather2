@@ -15,16 +15,12 @@ body{
     min-height: 100vh;
  
     
-background-image: url(ımg/sk3.jpg);
 
- 
-   background-size: cover;
-   background-position: center;
-
-   position: relative;
 
 }
-
+.weatherContainer{
+    margin-bottom: 50px;
+}
 
 
 
@@ -276,11 +272,12 @@ text-align: center;
 
 
 .daycontainer{
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 10px;
+   margin-bottom: 15px;
+
     
   
 }
@@ -291,18 +288,19 @@ text-align: center;
     background: transparent;
     background-image: linear-gradient(to left bottom, rgba(141, 155, 212, 0.7), rgba(203, 222, 203, 0.7))  ;
     opacity:0.7;
+    padding: 12px;
    
     /* width: 14%; */
 }
-
+/* 
 .weatherContainer{
     width: 1000px;
     margin-bottom: 80px;
 
     
-}
+} */
 .cardBody{
-    padding: 12px 16px;
+    padding: 12px;
 }
 
 #dayImg{
@@ -317,3 +315,110 @@ text-align: center;
 
 
 
+@media (max-width:900px){
+   
+
+    .container{
+        width: 100%;
+        font-size: 15px;
+        padding: 25px;
+    }
+.daycontainer{
+    max-height: 300px;
+    overflow-y: auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.daycard{
+    margin-top: 10px;
+}
+.daycontainer::-webkit-scrollbar{
+    width: 0;
+}
+
+    
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 12px;
+    }
+.daycontainer{
+
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    margin: 25px;
+}
+.daycard{
+    margin-top: 15px;
+}
+    
+}
+@media (max-width:450px){
+    html{
+        font-size: 10px;
+    }
+    .container{
+        width: 75%;
+  
+        padding: 40px;
+    }
+    .locat{
+
+        font-size: 18px;
+        padding: 0 12px;
+      
+    }
+    
+    .windSpeed{
+    
+        font-weight: 500;
+        font-size: 22px;
+    
+       
+    }
+    .temps{
+        font-size: 24px;
+    }
+
+
+
+.daycontainer{
+max-height: 500px;
+overflow-y: auto;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 40px;
+
+    padding:80px;
+    
+}
+.daycontainer::-webkit-scrollbar{
+    width: 0;
+}
+
+/* .cardBody{
+    padding: 20px;
+   
+} */
+
+.daycard{
+    margin-top: 5px;
+    padding: 10px;
+
+
+}
+#dayImg{
+    width: 30px;
+    height: 30px;
+}
+
+.card-title{
+    font-size: 18px;
+}
+.dayTitle{
+    font-size: 16px;
+    font-weight: 700;
+} 
+
+    
+}

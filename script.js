@@ -82,7 +82,7 @@ async function showWheather(city) {
         document.querySelector(".not-cıty").style.opacity = 1;
         document.querySelector(".not-cıty").style.height = "250px";
         const dayContainer = document.querySelector(".daycontainer")
-        dayContainer.style.display = "flex"
+        dayContainer.style.display = "grid"
     } catch (err) {
 
     }

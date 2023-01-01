@@ -6,7 +6,7 @@ showDayWeather = (city) => {
   request.open("GET", `https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=${city}`);
 
  request.setRequestHeader("content-type", "application/json");
-  request.setRequestHeader("authorization", "apikey 6xwuL85lXTUNtcpbBX9lLv:5JTHshh5oEzK4q8ZNERDbz");
+  request.setRequestHeader("authorization", "apikey 2oYaPJqEyMTvSWXhoBoaXA:0CIbTdSXIwFlQtMHqGLP89");
   request.send()
   request.addEventListener('load', function () {
     console.log(this)
@@ -16,7 +16,7 @@ showDayWeather = (city) => {
 
     if (data.success == false) {
       document.querySelector(".not-found").style.opacity = 1;
-      document.querySelector(".not-found").style.height = "200 px";
+      document.querySelector(".not-found").style.height = "200px";
       const errorDay = document.querySelector(".errorDay")
       errorDay.innerText = `${data.message}`
       document.querySelector(".card-body").classList.add("d-none")
@@ -33,7 +33,7 @@ showDayWeather = (city) => {
     for (let day of weatherResult) {
       console.log(day)
       dayWeatherStatus += `
-        <div class="card daycard" >
+        <div class="card daycard slide  tab" >
         <div class="cardBody text-center">
         <h5 class="card-title" title="Tarih">${day.date}</h5>
           <h5 class="card-title" title="Gün">${day.day}</h5>
