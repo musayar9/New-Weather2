@@ -1,6 +1,6 @@
 
 const url = 'https://api.openweathermap.org/data/2.5/'
-const apıKey = '1507d0c921d7c41f67e2a586b769ef52';
+const apıKey = '<your_api_key>';
 
 const container = document.querySelector(".container")
 const textSearch = document.querySelector("#textSearch");
@@ -95,7 +95,7 @@ localBtn.addEventListener("click", () => {
         let lat = location.coords.latitude;
         let lang = location.coords.longitude;
         console.log(lang, lat)
-        const api_key = "56c0c78c732641268b0867e65fa8256c"
+        const api_key = '<your_api_key>'
         const locUrl = ` https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lang}&key=${api_key}`
         const rsp = await fetch(locUrl)
         console.log(rsp)
