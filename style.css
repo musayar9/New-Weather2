@@ -192,7 +192,7 @@ color: rgba(0, 0, 0, 0.50);
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* border-top: 2px solid rgba(0, 0, 0, 0.16); */
+   
 }
 
 .weatLoc, .weatLoc2{
@@ -203,9 +203,7 @@ color: rgba(0, 0, 0, 0.50);
 
 }
 
-/* .otherWheather2{
-    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
-} */
+
 
 .new{
     display: flex;
@@ -219,12 +217,6 @@ color: rgba(0, 0, 0, 0.50);
     margin-right: 10px;
 }
 
-/* .hummidity{
-    border-left: 1px solid rgba(0, 0, 0, 0.16);
-}
-.averageTemp2{
-    border-left: 1px solid rgba(0, 0, 0, 0.16);
-}  */
 
 .feelDetail, .hummDetail, .maxTempDetail, .minTempDetail{
     margin-left: 2px;
@@ -290,15 +282,9 @@ text-align: center;
     opacity:0.7;
     padding: 12px;
    
-    /* width: 14%; */
-}
-/* 
-.weatherContainer{
-    width: 1000px;
-    margin-bottom: 80px;
-
     
-} */
+}
+
 .cardBody{
     padding: 12px;
 }
@@ -396,10 +382,7 @@ overflow-y: auto;
     width: 0;
 }
 
-/* .cardBody{
-    padding: 20px;
-   
-} */
+
 
 .daycard{
     margin-top: 5px;
